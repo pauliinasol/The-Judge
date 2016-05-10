@@ -6,9 +6,6 @@ module Api
       render json: @outfits.to_json
     end
 
-    def new #Remove later
-    end
-
     def show
       outfit = Outfit.find(params[:id])
       render json: outfit.to_json, status: 200

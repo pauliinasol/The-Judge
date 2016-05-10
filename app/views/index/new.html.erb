@@ -1,0 +1,13 @@
+<h1>This is the welcome site</h1>
+
+<h4>Upload an image - For testing of api</h2>
+
+    <%= form_for @outfits do |f| %>
+
+    <p>
+      <%= f.label :picture %>
+      <%= f.file_field :picture %>
+    </p>
+    <%= f.button 'Create' %>
+
+  <% end %>
