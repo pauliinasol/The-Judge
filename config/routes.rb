@@ -8,4 +8,12 @@ Rails.application.routes.draw do
   get 'api/outfits/:id' => 'api/outfits#show'
   post '/api/outfits' => 'api/outfits#create'
 
+  get '/api/ratings' => 'api/ratings#index'
+  get 'api/ratings/:id' => 'api/ratings#show'
+  post '/api/ratings' => 'api/ratings#create'
+
+  get '/api/occasions' => 'api/occasions#index'
+  get 'api/occasions/:id' => 'api/occasions#show'
+  post '/api/occasions' => 'api/occasions#create'
+
 end
