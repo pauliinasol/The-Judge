@@ -23,8 +23,6 @@
       outfit.photo = params[:outfit][:photo]
       outfit.start_datetime = params[:start]
       outfit.end_datetime = params[:end]
-
-      raise 'sdfsdfsdf'
       if outfit.save
         render json: outfit.to_json, status: 201
       else
