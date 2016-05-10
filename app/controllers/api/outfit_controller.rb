@@ -13,7 +13,6 @@ module Api
 
     def create
       outfit = Outfit.new
-      outfit
       outfit.photo = params[:photo]
       if outfit.save
         render json: outfit.to_json status: 201
@@ -21,6 +20,5 @@ module Api
         render json: outfit.errors.to_jason
       end
     end
-
   end
 end
