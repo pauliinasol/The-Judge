@@ -11,16 +11,14 @@ module Api
       render json: outfit.to_json, status: 200
     end
 
-    # def create
-    #   dish = Dish.new
-    #   dish.name = params[:name]
-    #   dish.image_url = params[:image_url]
-    #   if dish.save
-    #     render json: dish.to_json(methods: :like_count), status: 201
-    #   else
-    #     render json: dish.errors.to_jason
-    #   end
-    # end
-
+    def create
+      outfit = Outfit.new
+      outfit.photo = params[:photo]
+      if outfit.save
+        render json: outfit.to_json status: 201
+      else
+        render json: outfit.errors.to_jason
+      end
+    end
   end
 end
