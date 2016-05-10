@@ -9,6 +9,7 @@ gem 'fog'
 gem 'mini_magick'
 gem 'pg'
 gem 'bcrypt'
+gem 'rack-cors', :require => 'rack/cors'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
