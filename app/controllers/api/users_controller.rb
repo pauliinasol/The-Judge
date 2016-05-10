@@ -17,7 +17,7 @@ module Api
       user.email = params[:email]
       user.password_digest = params[:password]
       if user.save
-        render json: user.to_json status: 201
+        render json: user.to_json, status: 201
       else
         render json: user.errors.to_json
       end
