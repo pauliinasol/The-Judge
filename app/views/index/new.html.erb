@@ -2,11 +2,12 @@
 
 <h4>Upload an image - For testing of api</h2>
 
-  <%= form_for @picture do |f| %>
+    <%= form_for @outfit do |f| %>
 
     <p>
       <%= f.label :picture %>
       <%= f.file_field :picture %>
     </p>
     <%= f.button 'Create' %>
+
   <% end %>
