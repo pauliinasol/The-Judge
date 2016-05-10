@@ -6,9 +6,6 @@ module Api
       render json: @outfits.to_json
     end
 
-    def new #Remove later
-    end
-
     def show
       outfit = Outfit.find(params[:id])
       render json: outfit.to_json, status: 200
@@ -23,7 +20,7 @@ module Api
       outfit.start_datetime = params[:start]
       outfit.end_datetime = params[:end]
       if outfit.save
-        render json: outfit.to_json status: 201
+        render json: outfit.to_json, status: 201
       else
         render json: outfit.errors.to_jason
       end
