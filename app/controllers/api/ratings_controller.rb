@@ -3,7 +3,7 @@ module Api
 
     def index
       @ratings = Rating.all
-      render json: @outfits.to_json
+      render json: @ratings.to_json
     end
 
     def show
@@ -15,7 +15,7 @@ module Api
       rating = Rating.new
       rating.outfit_id = params[:outfit_id]
       rating.positive = params[:positive]
-      outfit.negative = params[:negative]
+      rating.negative = params[:negative]
       if rating.save
         render json: rating.to_json, status: 201
       else
