@@ -8,6 +8,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'mini_magick'
 gem 'pg'
+gem 'bcrypt'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
