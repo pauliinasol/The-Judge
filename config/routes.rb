@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get 'api/outfits/:id' => 'api/outfits#show'
   post '/api/outfits' => 'api/outfits#create'
 
-  resources :index
   resources :outfits
 
 end
