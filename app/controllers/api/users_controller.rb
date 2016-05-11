@@ -1,6 +1,7 @@
 module Api
   class UsersController < ApplicationController
-    before_filter :authenticate_user!, except: [:create, :index]
+    # before_filter :authenticate_user!, except: [:create, :index]
+
 
     # validates_uniqueness_of :email, message: "Sorry an account with that email already exists"
     # validates_presence_of :user_name
@@ -18,7 +19,7 @@ module Api
       user = User.new
       user.user_name = params[:user_name]
       user.email = params[:email]
-      user.password_digest = params[:password]
+      user.password = params[:password]
       if user.save
         render json: user.to_json, status: 201
       else
@@ -27,8 +28,9 @@ module Api
     end
 
     def current_user
-    User.find_by(id: session[:user_id])
+      User.find_by(id: session[:user_id])
     end
+
 
     def logged_in?
       if current_user
@@ -39,11 +41,9 @@ module Api
     end
 
     def login
-      User.find_by(email: params[:email])
+      user = User.find_by(email: params[:email])
 
       if user && user.authenticate(params[:password])
-
-        session[:user_id] = user.id
 
         render json: user.to_json, status: 201
       else
