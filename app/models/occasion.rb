@@ -1,3 +1,3 @@
 class Occasion < ActiveRecord::Base
-  belongs_to :outfit
+  has_many :outfits
 end

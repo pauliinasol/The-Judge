@@ -11,12 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511041441) do
+ActiveRecord::Schema.define(version: 20160511073534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "login_tests", force: :cascade do |t|
+  create_table "dislikes", force: :cascade do |t|
+    t.string   "outfit_id"
+    t.string   "integer"
+    t.string   "dislike_count"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.string   "outfit_id"
+    t.string   "integer"
+    t.string   "like_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,26 +39,24 @@ ActiveRecord::Schema.define(version: 20160511041441) do
   end
 
   create_table "outfits", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "occasion_id"
-    t.integer  "rating_id"
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "occasion_id"
+    t.string   "like_id"
+    t.string   "dislike_id"
     t.string   "photo"
-    t.datetime "start_datetime"
-    t.datetime "end_datetime"
-  end
-
-  create_table "ratings", force: :cascade do |t|
-    t.integer  "outfit_id"
-    t.integer  "positive"
-    t.integer  "negative"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "string"
+    t.string   "start_datetime"
+    t.string   "timestamp"
+    t.string   "end_datetime"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "user_name"
-    t.text     "password_digest"
     t.string   "email"
+    t.string   "string"
+    t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :login_tests
   get '/api/users' => 'api/users#index'
   get '/api/users/:id' => 'api/users#show'
   post '/api/users' => 'api/users#create'
@@ -20,5 +19,7 @@ Rails.application.routes.draw do
   post '/api/occasions' => 'api/occasions#create'
 
   resource :outfits
+  # match ':controller(/:action(/:id))(.:format)'
+
 
 end

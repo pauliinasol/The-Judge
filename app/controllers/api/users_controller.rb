@@ -3,7 +3,6 @@ module Api
     # before_filter :authenticate_user!, except: [:create, :index]
 
 
-
     # validates_uniqueness_of :email, message: "Sorry an account with that email already exists"
     # validates_presence_of :user_name
 
