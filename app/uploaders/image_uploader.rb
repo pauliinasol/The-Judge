@@ -1,6 +1,7 @@
 class ImageUploader < CarrierWave::Uploader::Base
-  storage :file
-  # storage :fog
+  
+  # storage :file
+  storage :fog
 
 # Need to add a column called image to person.
 #rails g migration add_image_to_person image:string
