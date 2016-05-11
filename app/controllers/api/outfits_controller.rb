@@ -25,5 +25,9 @@ module Api
         render json: outfit.errors.to_jason
       end
     end
+
+    def upload
+      
+    end
   end
 end
