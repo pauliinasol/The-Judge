@@ -22,7 +22,7 @@
       outfit.occasion_id = params[:occasion_id]
       outfit.rating_id = params[:rating_id]
       outfit.photo = params[:outfit][:photo]
-      outfit.start_datetime = params[:start]
+      # outfit.stargit t_datetime = params[:start]
       outfit.end_datetime = params[:end]
       if outfit.save
         render json: outfit.to_json, status: 201
