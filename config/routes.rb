@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get 'api/occasions/:id' => 'api/occasions#show'
   post '/api/occasions' => 'api/occasions#create'
 
+  resource :outfits
+
 end

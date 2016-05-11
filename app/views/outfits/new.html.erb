@@ -1,4 +1,6 @@
-<h1>This is the welcome site</h1>
+
+
+h1>This is the welcome site</h1>
 
 <h4>Upload an image - For testing of api</h2>
 
@@ -13,16 +15,10 @@
   <% end %>
 
   <BR /><BR />
-  <h4> Here's all your images - TEST PAGE</h4>
-
-  <% @outfits.each_with_index do |imageurl, i| %>
-  <p>
-    IMAGE TITLE
-  </p><BR />
-  <img src="<%=@outfits[i][:photo][url]%>">
-  <BR /><BR />
-  <% end %>
-
+  <h4> Here's the last image that was uploaded</h4>
+  <img src="<%=@example_outfit.photo%>">
+ <!-- This is not a URL -->
+ 
   <!-- Create is working. Will successfully write to DB
   next step is to re-display image
   then store image to AWS. Update the DB to store the now AWS img location -->

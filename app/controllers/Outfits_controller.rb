@@ -7,6 +7,7 @@
 
     def new #Remove later
       @outfit = Outfit.new
+      @example_outfit = Outfit.last
     end
 
     def show

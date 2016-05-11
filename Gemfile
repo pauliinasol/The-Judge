@@ -6,13 +6,14 @@ gem 'rails', '4.2.6'
 
 gem 'carrierwave'
 gem 'fog'
+gem "fog-aws"
 gem 'mini_magick'
 gem 'pg'
 gem 'bcrypt'
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
+# Use Uglifier as compressor for JavaScrbunbipt assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
