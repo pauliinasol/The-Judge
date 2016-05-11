@@ -30,7 +30,6 @@ class OutfitsController < ApplicationController
 =======
   def create
     outfit = Outfit.new
-
     outfit.user_id = params[:user_id]
     outfit.occasion_id = params[:occasion_id]
     outfit.photo = params[:outfit][:photo]
