@@ -49,7 +49,6 @@ module Api
       else
         render json: user.errors.to_json
       end
-    # render json: 'success'.to_json
     end
   end
 end
