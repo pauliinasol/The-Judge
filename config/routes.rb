@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/api/outfits' => 'api/outfits#index'
   get 'api/outfits/:id' => 'api/outfits#show'
   post '/api/outfits' => 'api/outfits#create'
+  post 'api/outfits/photo' => 'api/outfits#'
 
   get '/api/ratings' => 'api/ratings#index'
   get 'api/ratings/:id' => 'api/ratings#show'
