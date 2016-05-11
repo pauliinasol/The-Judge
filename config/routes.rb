@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :login_tests
   get '/api/users' => 'api/users#index'
   get 'api/users/:id' => 'api/user#show'
   post '/api/users' => 'api/users#create'

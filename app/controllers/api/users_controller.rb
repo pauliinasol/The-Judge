@@ -5,9 +5,9 @@ module Api
     # validates_uniqueness_of :email, message: "Sorry an account with that email already exists"
     # validates_presence_of :user_name
 
+
     def index
       @users = User.all
-      render json: @users.to_json
     end
 
     def show
