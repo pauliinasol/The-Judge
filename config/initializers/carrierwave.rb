@@ -3,8 +3,8 @@ CarrierWave.configure do |config|
     provider:              'AWS',                        # required
     aws_access_key_id:     ENV['s3_key'],                        # required
     aws_secret_access_key: ENV['s3_s_key'],                        # required
-    region:                'us-west-2',                  # optional, defaults to 'us-east-1'
-    host:                  's3.amazon.aws.com',             # optional, defaults to nil
+    # region:                'us-west-2',                  # optional, defaults to 'us-east-1'
+    # host:                  's3.amazon.aws.com',             # optional, defaults to nil
     # endpoint:              's3-us-west-2.amazonaws.com' # optional, defaults to nil
   }
   config.storage = :fog
