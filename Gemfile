@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-
+gem 'devise_token_auth'
 gem 'carrierwave'
 gem 'fog'
 gem "fog-aws"

@@ -9,7 +9,7 @@
 # Create users
 user = User.new
 user.user_name = 'Harry'
-user.email = '123@ga.com'
+user.email = '3535@ga.com'
 user.password_digest = '123'
 user.save
 

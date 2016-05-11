@@ -1,7 +1,6 @@
 class Outfit < ActiveRecord::Base
   belongs_to :user
-  belongs_to :ocassion
-  has_many :ratings
-
-  mount_uploader :photo, ImageUploader
+  belongs_to :occasion
+  has_many :likes
+  has_many :dislikes
 end
