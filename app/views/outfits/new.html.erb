@@ -1,0 +1,24 @@
+
+
+<h1>This is the welcome site</h1>
+
+<h4>Upload an image - For testing of api</h2>
+
+    <%= form_for @outfit do |f| %>
+
+    <p>
+      <%= f.label :photo %>
+      <%= f.file_field :photo %>
+    </p>
+    <%= f.button 'Create' %>
+
+  <% end %>
+
+  <BR /><BR />
+  <h4> Here's the last image that was uploaded</h4>
+  <img src="<%=@example_outfit.photo%>">
+ <!-- This is not a URL -->
+
+  <!-- Create is working. Will successfully write to DB
+  next step is to re-display image
+  then store image to AWS. Update the DB to store the now AWS img location -->

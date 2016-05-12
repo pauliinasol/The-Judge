@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  integer: MyString
+  occasion_id: MyString
+  integer: MyString
+  like_id: MyString
+  integer: MyString
+  dislike_id: MyString
+  integer: MyString
+  photo: MyString
+  string: MyString
+  start_datetime: MyString
+  timestamp: MyString
+  end_datetime: MyString
+  timestamp: MyString
+
+two:
+  user_id: MyString
+  integer: MyString
+  occasion_id: MyString
+  integer: MyString
+  like_id: MyString
+  integer: MyString
+  dislike_id: MyString
+  integer: MyString
+  photo: MyString
+  string: MyString
+  start_datetime: MyString
+  timestamp: MyString
+  end_datetime: MyString
+  timestamp: MyString
